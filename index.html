@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calendário de jogos - NLW</title>
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="blue">
+    <div id="app">
+      <header>
+        <div class="container">
+          <a href="#" class="logo">
+            <img src="./public/logo.svg" alt="Logo da NLW" class="logo" />
+          </a>
+          <h1>Calendar</h1>
+        </div>
+        <button id="theme">
+          <svg
+            width="30"
+            height="43"
+            viewBox="0 0 30 43"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#clip0_422_1061)">
+              <path
+                d="M8.34166 37.8584C8.34166 38.3831 8.49299 38.8951 8.78199 39.3326L10.2103 41.4734C10.6478 42.1296 11.6412 42.6634 12.4303 42.6634H17.5695C18.356 42.6634 19.3495 42.13 19.787 41.4734L21.2103 39.3334C21.4552 38.9636 21.656 38.3026 21.656 37.8584L21.6667 34.5917H8.33332L8.34166 37.8584ZM15 0C6.50165 0.0266917 0.333313 6.91418 0.333313 14.5917C0.333313 18.29 1.70331 21.6617 3.96332 24.2417C5.34082 25.8117 7.49166 29.0942 8.31499 31.8625C8.3176 31.8834 8.32281 31.9056 8.32541 31.9277H21.6754C21.678 31.9056 21.6832 31.8847 21.6858 31.8625C22.5088 29.0942 24.66 25.8117 26.0375 24.2417C28.3 21.7334 29.6667 18.3667 29.6667 14.5917C29.6667 6.56668 23.1 0.000325 15 0ZM23.0333 21.675C21.7283 23.1625 20.1133 25.5334 18.9458 27.9992H11.0617C9.89416 25.5334 8.27916 23.1625 6.97499 21.6759C5.26999 19.7334 4.33332 17.175 4.33332 14.5917C4.33332 9.44168 8.34166 4.02084 14.925 4.00001C20.8833 4.00001 25.6667 8.78335 25.6667 14.5917C25.6667 17.175 24.7333 19.7334 23.0333 21.675ZM13.6667 6.66668C9.99166 6.66668 6.99999 9.65835 6.99999 13.3334C6.99999 14.0704 7.59632 14.6667 8.33332 14.6667C9.07032 14.6667 9.66666 14.0667 9.66666 13.3334C9.66666 11.1275 11.4608 9.33335 13.6667 9.33335C14.4037 9.33335 15 8.73768 15 8.00085C15 7.26401 14.4 6.66668 13.6667 6.66668Z"
+                fill="#338af3"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_422_1061">
+                <rect width="30" height="43" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+
+          <!-- 
+              .vertical.flip-container { position: relative; }    	
+              .vertical .back { transform: rotateX(180deg); }    	
+              .vertical.flip-container .flipper {  		
+                transform-origin: 100% 213.5px; /* metade da altura */
+              }    	
+              .vertical.flip-container:hover .flipper { transform: rotateX(-180deg); }
+           -->
+        </button>
+      </header>
+      <main></main>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
