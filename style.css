@@ -126,6 +126,26 @@ nav {
   text-transform: uppercase;
 }
 
+#left-arrow,
+#right-arrow {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.cards:first-child #left-arrow,
+.cards:first-child #right-arrow {
+  visibility: visible;
+  opacity: 1;
+}
+
+#left-arrow:hover {
+  animation: moveLeft 0.5s forwards;
+}
+
+#right-arrow:hover {
+  animation: moveRight 0.5s forwards;
+}
+
 .cards .button {
   display: flex;
   align-items: center;
@@ -173,6 +193,10 @@ body.yellow .cards .button:hover .date {
   line-height: 125%;
 }
 
+.cards ul li img {
+  width: 5.12rem;
+}
+
 .cards ul li strong,
 .cards ul li img {
   transition: 0.3s;
@@ -206,6 +230,17 @@ body.yellow .cards .button:hover .date {
 }
 
 /* ANIMATIONS */
+@keyframes moveLeft {
+  50% {
+    transform: translateX(-12px);
+  }
+}
+
+@keyframes moveRight {
+  50% {
+    transform: translateX(12px);
+  }
+}
 
 @keyframes scale {
   0% {
@@ -226,5 +261,11 @@ body.yellow .cards .button:hover .date {
     max-width: 670px;
     flex-direction: row;
     flex-wrap: wrap;
+  }
+
+  .cards:nth-child(2) #right-arrow,
+  .cards:nth-child(2) #left-arrow {
+    visibility: visible;
+    opacity: 1;
   }
 }
