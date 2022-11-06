@@ -115,7 +115,7 @@ let cards = [
     createCard(
       "27/11",
       "Domingo",
-      createGame("Japan", "07:00", "costa") +
+      createGame("japan", "07:00", "costa") +
         createGame("belgium", "10:00", "morocco") +
         createGame("croatia", "13:00", "canada") +
         createGame("spain", "16:00", "germany")
