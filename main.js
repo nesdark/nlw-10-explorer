@@ -163,7 +163,7 @@ let cards = [
 ]
 
 let leftArrow = document.querySelector("left-arrow")
-let position = 2
+let position = 1
 
 document.querySelector("main").innerHTML = cards[position - 1]
 
